@@ -33,7 +33,7 @@
 git clone https://github.com/eliasmcastro/rocketseat-bootcamp-gostack-11.0-go-restaurant.git
 ```
 
-### Fron-end
+### Front-end
 
 #### Requisitos
 
@@ -56,13 +56,13 @@ Antes de tudo, para que você tenha os dados para exibir em tela, criamos um arq
 
 Para isso, deixamos instalado no seu package.json uma dependência chamada `json-server`, e um arquivo chamado `server.json` que contém os dados para uma rota `/foods`
 
-**3. Executar API fake**
+Executar API fake
 
 ```bash
 yarn json-server server.json -p 3333
 ```
 
-**4. Executar aplicação**
+**3. Executar aplicação**
 
 ```bash
 yarn start
@@ -104,13 +104,13 @@ Para isso, deixamos instalado no seu package.json uma dependência chamada `json
 
 **Rota `/favorites`**: Retorna todas as comidas favoritas que foram cadastrados na API
 
-**3. Executar API fake**
+Executar API fake
 
 ```bash
 yarn json-server server.json -p 3333
 ```
 
-**4. Executar aplicação**
+**3. Executar aplicação**
 
 Iniciar aplicação
 
@@ -142,7 +142,7 @@ _Dica: se utilizar o comando `yarn test --watchAll`, o mesmo fica realizando aut
 
 #### Funcionalidades da aplicação
 
-- **`Listar os pratos de comida da sua API`**: Sua página `Dashboard` deve ser capaz de exibir uma listagem, com o campo `title`, `value`, e  `description` e `available` de todos os pratos de comida que estão cadastrados na sua API.
+- **`Listar os pratos de comida da sua API`**: Sua página `Dashboard` deve ser capaz de exibir uma listagem, com o campo `title`, `value`, e `description` e `available` de todos os pratos de comida que estão cadastrados na sua API.
 
 **Dica**: Para exibir se o prato de comida está disponível ou não, você pode validar o campo `available` que é retornado da API e exibir `Disponível` caso seja true, e `Indisponível` caso seja false.
 
@@ -154,7 +154,7 @@ _Dica: se utilizar o comando `yarn test --watchAll`, o mesmo fica realizando aut
 
 - **`Editar pratos de comida da sua API`**: Em sua página Dashboard você deve abrir um modal ao clicar no botão `Editar Prato`. Esse modal deve ser responsável por editar uma `food` passando os campos `image`, `name`, `description`, `value`.
 
-**Dica**: Ao editar um item, quando for envia-lo para o backend, lembre de copiar os dados anteriores como o `available` e o `id`, ou eles serão  perdidos do seu arquivo server.json.
+**Dica**: Ao editar um item, quando for envia-lo para o backend, lembre de copiar os dados anteriores como o `available` e o `id`, ou eles serão perdidos do seu arquivo server.json.
 
 - **`Remover pratos de comida da sua API`**: Em sua página Dashboard você deve remover um prato de comida ao clicar no botão com ícone de lixeira no componente Food.
 
@@ -186,7 +186,7 @@ Para esse desafio, temos os seguintes testes:
 
 #### Funcionalidades da aplicação
 
-- **`Listar os pratos de comida da sua API`**: Sua página `Dashboard` deve ser capaz de exibir uma listagem, com o campo `name`, `value` e  `description` de todos os pratos de comida que estão cadastrados na sua API.
+- **`Listar os pratos de comida da sua API`**: Sua página `Dashboard` deve ser capaz de exibir uma listagem, com o campo `name`, `value` e `description` de todos os pratos de comida que estão cadastrados na sua API.
 
 - **`Listar as categorias da sua API`**: Sua página `Dashboard` deve ser capaz de exibir uma listagem, com o campo `title` e `image_url` de todas as categorias que estão cadastrados na sua API.
 
@@ -218,7 +218,7 @@ Para esse desafio, temos os seguintes testes:
 
 **Dica**: No json-server você pode usar os query params normalmente para buscar/filtrar de acordo com o valor de um campo do item no arquivo server.json. Por exemplo, para filtrar todos os pratos com a categoria 1, a sua url ficaria como `http://localhost:3000/foods?category_like=1`.
 
-- **`should be able to list the food plates filtered by name search`**:  Para que esse teste passe, sua aplicação deve permitir que sejam listados na sua `Dashboard`, os pratos de comidas filtrados por nome da sua fake API.
+- **`should be able to list the food plates filtered by name search`**: Para que esse teste passe, sua aplicação deve permitir que sejam listados na sua `Dashboard`, os pratos de comidas filtrados por nome da sua fake API.
 
 **Dica**: No json-server você pode usar os query params normalmente para buscar/filtrar de acordo com o valor de um campo do item no arquivo server.json. Por exemplo, para filtrar todos os pratos com o nome Veggie, a sua url ficaria como `http://localhost:3000/foods?name_like=Veggie`.
 
