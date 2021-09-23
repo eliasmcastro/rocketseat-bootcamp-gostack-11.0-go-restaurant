@@ -114,16 +114,26 @@ yarn json-server server.json -p 3333
 
 Iniciar aplicação
 
-Obs: Somente a 1º vez para instalar a aplicação no dispositivo
+Com o emulador aberto, basta abrir dois terminais. Um para executar o Metro Bundler e o segundo para instalar o app. Os comandos são:
 
-```bash
-yarn android
-```
-
-Iniciar o running metro bundler
+Terminal 1
 
 ```bash
 yarn start
+```
+
+Terminal 2
+
+Obs: Somente a 1º vez para instalar a aplicação no dispositivo
+
+```bash
+yarn run react-native run-android
+```
+
+Próximas execuções, pode-se utilizar apenas
+
+```bash
+yarn android
 ```
 
 ### Testes automatizados
@@ -164,10 +174,6 @@ _Dica: se utilizar o comando `yarn test --watchAll`, o mesmo fica realizando aut
 
 #### Específicação dos testes
 
-Em cada teste, tem uma breve descrição do que sua aplicação deve cumprir para que o teste passe.
-
-Para esse desafio, temos os seguintes testes:
-
 - **`should be able to list all the food plates from your api`**: Para que esse teste passe, sua aplicação deve permitir que sejam listados, toda os pratos de comidas que são retornadas da sua fake API.
 
 - **`should be able to add a new food plate`**: Para que esse teste passe, você deve permitir que um prato de comida seja adicionado a sua api, adicionando-o também à listagem.
@@ -207,10 +213,6 @@ Para esse desafio, temos os seguintes testes:
 **Dica**: Você pode usar o método `reduce` para somar o valor de todos os extras pedidos e somá-lo com o valor do prato de comida. Depois disso lembre-se de multiplicar tudo pela quantidade pedida do produto.
 
 #### Específicação dos testes
-
-Em cada teste, tem uma breve descrição do que sua aplicação deve cumprir para que o teste passe.
-
-Para esse desafio, temos os seguintes testes:
 
 - **`should be able to list the food plates`**: Para que esse teste passe, sua aplicação deve permitir que sejam listados na sua `Dashboard`, todos os pratos de comidas que são retornados da sua fake API.
 
